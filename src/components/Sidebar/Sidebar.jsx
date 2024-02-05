@@ -1,6 +1,7 @@
 import styles from "./Sidebar.module.css";
 import avatar from "../../assets/avatar.jpg";
 import { FaPencilAlt } from "react-icons/fa";
+import { Avatar } from "../Avatar.jsx/Avatar";
 
 export function Sidebar() {
   return (
@@ -8,7 +9,7 @@ export function Sidebar() {
       <img className={styles.cover} src={avatar} alt="" />
 
       <div className={styles.profile}>
-        <img src={"https://github.com/howtrojan.png"} alt="Imagem de Perfil" />
+        <Avatar hasBorder={true} src="https://github.com/howtrojan.png"/>
         <strong>André Braga</strong>
         <span>Web Developer</span>
       </div>
