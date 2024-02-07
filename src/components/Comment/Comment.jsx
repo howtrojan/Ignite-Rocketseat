@@ -2,7 +2,7 @@ import { Avatar } from "../Avatar.jsx/Avatar";
 import styles from "./Comment.module.css";
 import { FaRegTrashAlt, FaRegThumbsUp } from "react-icons/fa";
 
-export function Comment() {
+export function Comment({content}) {
   return (
     <div className={styles.comment}>
       <Avatar hasBorder={false} src="https://github.com/diego3g.png"/>
@@ -25,7 +25,7 @@ export function Comment() {
         </header>
        
 
-        <p>Muito bom. parabens!! </p>
+        <p>{content}</p>
         </div>
 
         <footer>
